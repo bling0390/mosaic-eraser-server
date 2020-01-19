@@ -1,0 +1,29 @@
+{
+  "name": "mosaic-eraser-server",
+  "version": "1.0.0",
+  "description": "koa2 base mosaic eraser server",
+  "main": "src/index.js",
+  "scripts": {
+    "build": "cross-env NODE_ENV=production webpack --config build/webpack.config.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "koa2",
+    "mosaic eraser"
+  ],
+  "author": "bling0390",
+  "license": "MIT",
+  "dependencies": {
+    "@koa/cors": "^3.0.0",
+    "koa": "^2.11.0",
+    "koa-body": "^4.1.1",
+    "koa-router": "^7.4.0",
+    "koa-static": "^5.0.0",
+    "request": "^2.88.0"
+  },
+  "devDependencies": {
+    "cross-env": "^6.0.3",
+    "webpack": "^4.41.3",
+    "webpack-cli": "^3.3.10"
+  }
+}
