@@ -1,5 +1,5 @@
 # Mosaic eraser server
-Cross-platform lightweight server which erase mosaic on image for you guys. Co-work with chrome extension[mosaic eraser(auditing)]().
+Cross-platform lightweight server which erase mosaic on image for you guys. Co-work with chrome extension [mosaic eraser(auditing)]().
 
 Would you like to see what the picture used to be? Have a try and see what you got!
 
@@ -31,5 +31,5 @@ $ pm2 start ecosystems.config.js --env production
 - **Base64-formatted support**
 - **Mosaic erase Accuracy**
 
-##### Strongly inspired by project[DeepMosaics](https://github.com/HypoX64/DeepMosaics), thanks to @HypoX64. 
+##### Strongly inspired by project [DeepMosaics](https://github.com/HypoX64/DeepMosaics), thanks to @HypoX64. 
 
