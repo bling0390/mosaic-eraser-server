@@ -23,7 +23,7 @@ app.use(koaBody());
 
 app.use(router.routes());
 
-app.use(serve('/Users/lingbin/work/frontend/mosaic_eraser_server/result/'));
+app.use(serve(process.env.SERVE_PATH));
 
 const eraseImageMosaic = async ({ request, res }) => {
   // not support base64 yet
@@ -36,7 +36,7 @@ const eraseImageMosaic = async ({ request, res }) => {
     });
     
     res.end(JSON.stringify({
-      url: `http://localhost:3389/images/${imageName.replace(/\.(png|jpe?g)$/, '_clean.jpg')}`
+      url: `http://${process.env.DOMAIN}:${process.env.PORT}/images/${imageName.replace(/\.(png|jpe?g)$/, '_clean.jpg')}`
     }));
     
     return false;
@@ -52,7 +52,7 @@ const eraseImageMosaic = async ({ request, res }) => {
   });
   
   res.end(JSON.stringify({
-    url: `http://localhost:3389/images/${imageName.replace(/\.(png|jpe?g)$/, '_clean.jpg')}`
+    url: `http://${process.env.DOMAIN}:${process.env.PORT}/images/${imageName.replace(/\.(png|jpe?g)$/, '_clean.jpg')}`
   }));
 };
 
@@ -86,4 +86,4 @@ const executeBashCommand = (path) => {
   });
 };
 
-app.listen(3389);
+app.listen(process.env.PORT);
