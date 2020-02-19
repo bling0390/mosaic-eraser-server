@@ -31,6 +31,6 @@ $ pm2 start ecosystems.config.js --env production
 - **Base64-formatted support**
 - **Mosaic erase Accuracy**
 
-## Acknowledgmen
+## Acknowledgment
 **Strongly inspired by project [DeepMosaics](https://github.com/HypoX64/DeepMosaics), thanks to @HypoX64.**
 
